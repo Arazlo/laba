@@ -1,0 +1,17 @@
+.place__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+place__column:first-of-type{
+    align-self: start;
+}
+
+@media screen and (max-width: 767px){
+    .place__column{
+        align-items: center;
+        width: 320px;
+    }
+}

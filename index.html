@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="./pages/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <title>Путешествие по России</title>
+</head>
+<body class="page">
+    <header class="header">
+        <img src="./images/header-logo.svg" class="logo" alt="Логотип">
+        <ul class="header__language-links">
+            <li><a href="#" onclick = "changeru()" class="header__language-link header__language-link_language_ru">Ru</a></li>
+            <li><a href="#" onclick = "changeen()" class="header__language-link header__language-link_language_en">En</a></li>
+        </ul>
+    </header>
+    <main class="content">
+        <section class="lead">
+            <h1 class="lead__title">Путешествия по России</h1>
+            <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
+            <img src="./images/lead-polka.jpg" class="lead__image" alt="Полка задний фон">
+            <p class="lead__caption">ваша полка — верхняя</p>
+        </section>
+
+        <div class = "triangle">
+
+        </div>
+
+        <section class="intro">
+            <h2 class="intro__title">Чего мы там не видели?</h2>
+            <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
+            <ul class="intro__list">
+                <li><span id= "intro_list1" class='intro__list-bold'>Часовых поясов</span> 11</li>
+                <li><span id= "intro_list2"class='intro__list-bold'>Объектов природного наследия ЮНЕСКО</span> 12</li>
+                <li><span id= "intro_list3" class='intro__list-bold'>Объектов культурного наследия ЮНЕСКО</span> 16</li>
+                <li><span id= "intro_list4" class='intro__list-bold'>Природных заповедников</span> 105</li>
+                <li><span id= "intro_list5" class='intro__list-bold'>Аэропортов</span> 241</li>
+            </ul>
+        </section>
+            <div class="img-slider">
+                <div class="slide active">
+                  <img src="images/baikal.jpg" alt="">
+                  <div class="info">
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="images/kamchatka_volcano2.jpg" alt="">
+                  <div class="info">
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="images/kamchatka_volcano.jpg" alt="">
+                  <div class="info">
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="images/Russia_Sochi_Parks.jpg" alt="">
+                  <div class="info">
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="images/train.jpg" alt="">
+                  <div class="info">
+                  </div>
+                </div>
+                <div class="navigation">
+                  <div class="btn active"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                </div>
+              </div>
+
+        <section class="places">
+            <article class="place">
+                <div class="place__row place__row_role_title">
+                    <h2 id="place_title1" class="place__title">Куршская коса</h2>
+                    <div class="place__website">
+                        <h3 class="place__url-heading">URL</h3>
+                        <a href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
+                    </div>
+                    
+                </div>
+                <div class="place__row place__row_role_content">
+                    <img src="./images/place-kosa.jpg" class="place__image" alt="Коса">
+                    <div class="place__column">
+                        <p id="place__paragraph1" class="place__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского моря с другой. Уникальная природная зона на краю российского анклава.</p>
+                        <p id="place__paragraph2" class="place__paragraph">На этом Калининградская область не заканчивается. Для путешественника и исследователя там же по соседству — самая западная точка России, Балтийская коса, — и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает суету, окуная в спокойствие природы и запах стального, прохладного моря.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="place">
+                <div class="place__row place__row_role_title">
+                    <h2 id="place_title2" class="place__title">Кольский</h2>
+                    <div class="place__website">
+                        <h3 class="place__url-heading">URL</h3>
+                        <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
+                    </div>
+                </div>
+                <div class="place__row place__row_role_content">
+                    <img src="./images/place-kolsky.jpg" class="place__image" alt="Кольский">
+                    <div class="place__column">
+                        <p id="place__paragraph3" class="place__paragraph">Почти весь полуостров находится за Полярным кругом. Саамская тундра, от которой на юг — 
+                            тайга, а на север — Ледовитый океан, прикидывающийся Баренцевым морем.</p>
+                        <p id="place__paragraph4" class="place__paragraph">Возможно, вы смотрели Звягинцева и даже слышали историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. Но ваша мечта увидеть северное сияние начинает сбываться с билетом
+                            в Мурманск.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="place">
+                <div class="place__row place__row_role_title">
+                    <h2 id="place_title3" class="place__title">Алтай</h2>
+                    <div class="place__website">
+                        <h3 class="place__url-heading">URL</h3>
+                        <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822 " class="place__link">Facebook</a>
+                    </div>
+                </div>
+                <div class="place__row place__row_role_content">
+                    <img src="./images/place-altai.jpg" class="place__image"  alt="Алтай">
+                    <div class="place__column">
+                        <p id="place__paragraph5" class="place__paragraph">Алтай — одно из красивейших мест в России. 
+                            В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
+                        <p id="place__paragraph6" class="place__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="place">
+                <div class="place__row place__row_role_title">
+                    <h2 id="place_title4" class="place__title">Зимний Байкал</h2>
+                    <div class="place__website">
+                        <h3 class="place__url-heading">URL</h3>
+                        <a href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
+                    </div>
+                </div>
+                <div class="place__row place__row_role_content">
+                    <img src="./images/place-winter-baikal.jpg" class="place__image" alt="Байкал">
+                    <div class="place__column">
+                        <p id="place__paragraph7" class="place__paragraph">Всем известен Байкал как крупнейшее озеро 
+                            в мире. Многие также знают, что это самый большой источник пресной воды и одно из красивейших мест в России.</p>
+                        <p id="place__paragraph8" class="place__paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя 
+                            к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="place">
+                <div class="place__row place__row_role_title">
+                    <h2 id="place_title5" class="place__title">Карелия</h2>
+                    <div class="place__website">
+                        <h3 class="place__url-heading">URL</h3>
+                        <a href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>
+                    </div>
+                </div>
+                <div class="place__row place__row_role_content">
+                    <img src="./images/place-karelia.jpg" class="place__image" alt="Карелия">
+                    <div class="place__column">
+                        <p id="place__paragraph9" class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. 
+                            В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья 
+                            в паре метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="cover">
+            <a href="https://stampsy.com/na-elektrichkakh-do-baikala" class="cover__link cover__background">
+                <h2 class="cover__title">До Байкала «на собаках»</h2>
+                <p class="cover__subtitle">По мотивам учебной темы о Транссибе и iframes — путешествие от столицы до Байкала на электричках.</p>
+                <div class="cover__overlay"></div>
+            </a>
+        </section>
+        <section class="payment">
+            <button class="payment__button">Вперед!</button>    
+        </section>
+        <section class="location">
+            <h2 class = "loaction__title">Наши офисы</h2>
+            <ul class="location__list">
+                <li><span id= "location_list1" class='location__list-bold'>Адреса:</span> <p id= "location_li1">Юбилейная 6А, Дзержинского 121, Хруцкая 5</p></li>
+                <li></li><span id= "location_list2"class='location__list-bold'>контакные номера офисов:</span><p id= "location_li2">+80296954113, +80333642795, +80446789355</p></li>
+                <li><span id= "location_list3" class='location__list-bold'>График работы:</span> <p id= "location_li3">9:00-20:00</p></li>
+            </ul>
+            <div id="map" class ="map"></div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__links">
+                <li><a href="https://yandex.ru/maps" id ="footer__link1" class="footer__link">Карты</a></li>
+                <li><a href="https://yandex.ru/pogoda" id ="footer__link2" class="footer__link">Погода</a></li>
+                <li><a href="https://rasp.yandex.ru" id ="footer__link3" class="footer__link">Расписание</a></li>
+                <li><a href="https://calendar.yandex.ru" id ="footer__link4" class="footer__link">Календарь</a></li>
+                <li><a href="https://travel.yandex.ru" id ="footer__link5" class="footer__link">Путешествия</a></li>
+            </ul>
+        </nav>
+        <p class="footer__copyright">© 2020. Папков Андрей +88005553535</p>
+    </footer>
+    <div id = "popup" class="popup popup_type_payment">
+        <form method="POST" class="form">
+            <h4>Account</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Nick Name" required class="name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="email" placeholder="Email Adress" required class="name">
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                        <div class="input-box">
+                            <h4>Date of Birth</h4>
+                            <input type="text" placeholder="DD" class="dob" required class="date">
+                            <input type="text" placeholder="MM" class="dob" required class="date">
+                            <input type="text" placeholder="YYYY" class="dob"required class="date">
+                        </div>
+                        <div class="input-box">
+                            <h4>Gender</h4>
+                            <input type="radio" id="b1" name="gendar" checked class="radio">
+                            <label for="b1">Male</label>
+                            <input type="radio" id="b2" name="gendar" class="radio">
+                            <label for="b2">Female</label>
+                        </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Payment Details</h4>
+                        <input type="radio" name="pay" id="bc1" checked class="radio">
+                        <label for="bc1"><span><i class="fa fa-cc-visa"></i> Credit Card</span></label>
+                        <input type="radio" name="pay" id="bc2" class="radio">
+                        <label for="bc2"><span><i class="fa fa-cc-paypal"></i> Paypal</span></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="tel" placeholder="Card Number" required class="name">
+                        <i class="fa fa-credit-card icon"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="tel" placeholder="Card CVC" required class="name">
+                        <i class="fa fa-user icon"></i>
+                    </div>
+                <div class="input-box">
+                    <select>
+                        <option>01 jun</option>
+                        <option>02 jun</option>
+                        <option>03 jun</option>
+                    </select>
+                    <select>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <button type="submit">PAY NOW</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./popup.js"></script>
+    <script src="./translate.js"></script>
+    <script src="./map.js"></script>
+    <script src="./slider.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function sweetalertclick(){
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            )
+        }
+    </script>
+</body>
+</html>

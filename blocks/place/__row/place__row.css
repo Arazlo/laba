@@ -1,0 +1,8 @@
+.place__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: start;
+    align-items: flex-end;
+}
